@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./styles/output.css">
+
+    <title>Dev Burguer - A Melhor Hamburgueria Dev!</title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+        <div class="w-full h-full flex flex-col justify-center items-center">
+            <img src="./assets/hamb-1.png" alt="Logo DevBurguer"
+                class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200">
+            <h1 class="text-4xl mt-4 mb-2 font-bold text-white">
+                Dev Burguer
+            </h1>
+
+            <span class="text-white font-medium">Rua Vistaboa 77, Boavista - PT </span>
+
+            <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+                <span class="text-white font-medium">Seg á Dom - 18:00 às 22:00</span>
+            </div>
+
+        </div>
+    </header>
+    <!-- FIM HEADER -->
+
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
+        Conheça nosso menu
+    </h2>
+
+    <!-- INICIO MENU -->
+
+    <div id="menu">
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+            <!-- PRODUTO ITEM -->
+            <div class="flex gap-2">
+                <img src="./assets/hamb-1.png" alt="Hamburguer Smash"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+                <div>
+                    <p class="font-bold">Hamburguer Smash</p>
+                    <p class="text-sm">Pão suave de fermentação natural da Panike, burguer 160g,
+                        queijo cheddar e maionese da casa.</p>
+                    <div class="flex  items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">€ 8.95</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer Smash"
+                            data-price="8.95">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- PRODUTO ITEM -->
+
+            <!-- PRODUTO ITEM 2 -->
+            <div class="flex gap-2">
+                <img src="./assets/hamb-2.png" alt="Hamburguer Duplo"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+                <div>
+                    <p class="font-bold">Hamburguer Duplo</p>
+                    <p class="text-sm">Pão suave de fermentação natural da Panike, burguer 160g,
+                        queijo cheddar e maionese da casa.</p>
+                    <div class="flex  items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">€ 12.95</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer Duplo"
+                            data-price="12.95">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- PRODUTO ITEM 2 -->
+
+            <!-- PRODUTO ITEM 3 -->
+            <div class="flex gap-2">
+                <img src="./assets/hamb-3.png" alt="Hamburguer Egg Twice"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+                <div>
+                    <p class="font-bold">Hamburguer Egg Twice</p>
+                    <p class="text-sm">Pão suave de fermentação natural da Panike, burguer 160g,
+                        queijo cheddar e maionese da casa.</p>
+                    <div class="flex  items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">€ 10.95</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer Egg Twice"
+                            data-price="10.95">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- PRODUTO ITEM 3 -->
+
+            <!-- PRODUTO ITEM 4 -->
+            <div class="flex gap-2">
+                <img src="./assets/hamb-4.png" alt="Hamburguer Chicken Onion"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+                <div>
+                    <p class="font-bold">Hamburguer Chicken Onion</p>
+                    <p class="text-sm">Pão suave de fermentação natural da Panike, burguer 160g,
+                        queijo cheddar e maionese da casa.</p>
+                    <div class="flex  items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">€ 14.95</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer Chicken Onion"
+                            data-price="14.95">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- PRODUTO ITEM 4 -->
+
+            <!-- PRODUTO ITEM 5 -->
+            <div class="flex gap-2">
+                <img src="./assets/hamb-5.png" alt="Hamburguer X-Salad"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+                <div>
+                    <p class="font-bold">Hamburguer X-Salad</p>
+                    <p class="text-sm">Pão suave de fermentação natural da Panike, burguer 160g,
+                        queijo cheddar e maionese da casa.</p>
+                    <div class="flex  items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">€ 11.95</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer X-Salad"
+                            data-price="11.95">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- PRODUTO ITEM 5 -->
+
+            <!-- PRODUTO ITEM 6 -->
+            <div class="flex gap-2">
+                <img src="./assets/hamb-6.png" alt="Hamburguer Beed w/fries"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+                <div>
+                    <p class="font-bold">Hamburguer Beef w/fries</p>
+                    <p class="text-sm">Pão suave de fermentação natural da Panike, burguer 160g,
+                        queijo cheddar e maionese da casa.</p>
+                    <div class="flex  items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">€ 20.95</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer Beef w/fries"
+                            data-price="20.95">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- PRODUTO ITEM 6 -->
+
+            <!-- PRODUTO ITEM 7 -->
+            <div class="flex gap-2">
+                <img src="./assets/hamb-7.png" alt="Hamburguer Premium Rings"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+                <div>
+                    <p class="font-bold">Hamburguer Premium Rings</p>
+                    <p class="text-sm">Pão suave de fermentação natural da Panike, burguer 160g,
+                        queijo cheddar e maionese da casa.</p>
+                    <div class="flex  items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">€ 17.95</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer Premium Rings"
+                            data-price="17.95">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- PRODUTO ITEM 7 -->
+
+            <!-- PRODUTO ITEM 8 -->
+            <div class="flex gap-2">
+                <img src="./assets/hamb-8.png" alt="Hamburguer Boss Vegan"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+                <div>
+                    <p class="font-bold">Hamburguer Boss Vegan</p>
+                    <p class="text-sm">Pão suave de fermentação natural da Panike, burguer 160g,
+                        queijo cheddar e maionese da casa.</p>
+                    <div class="flex  items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">€ 14.95</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer Boss Vegan "
+                            data-price="14.95">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- PRODUTO ITEM 8 -->
+        </main>
+
+        <div class="mx-auto max-w-7xl px-2 my-2">
+            <h2 class=" font-bold text-3xl">
+                Bebidas
+            </h2>
+        </div>
+
+        <!-- GRID BEBIDAS-->
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+
+            <!-- PRODUTO BEBIDA -->
+
+            <div class="flex gap-2 w-full">
+                <img src="./assets/refri-1.png" alt="Coca-Cola Lata 33cl"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+                <div class="w-full">
+                    <p class="font-bold">Coca-Cola Lata 33cl</p>
+                    <p class="text-sm">Refrescante e Envolvente.</p>
+                    <div class="flex  items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">€ 1.75</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Coca-Cola Lata 33cl"
+                            data-price="1.75">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- PRODUTO BEBIDA -->
+
+            <!-- PRODUTO BEBIDA 2 -->
+
+            <div class="flex gap-2 w-full">
+                <img src="./assets/refri-2.png" alt="Guaraná Antartica"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+                <div class="w-full">
+                    <p class="font-bold">Guaraná Antartica 33cl</p>
+                    <p class="text-sm">Energia que Contagia.</p>
+                    <div class="flex  items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">€ 2</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Guaraná Antartica 33cl"
+                            data-price="2">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- PRODUTO BEBIDA 2-->
+        </div>
+
+        <!-- FIM GRID BEBIDAS-->
+
+    </div>
+
+    <!-- FIM MENU -->
+
+
+    <!-- MODAL CART -->
+
+    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden" id="cart-modal">
+        <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+            <h2 class="text-center font-bold text-2xl mb-2">Meu Carrinho</h2>
+            <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+            <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+            <p class="font-bold mt-4">Morada de entrega:</p>
+            <input type="text" placeholder="Digite sua morada completa" id="address"
+                class="w-full border-2 p-1 rounded my-1">
+            <p class="text-red-500 hidden" id="address-warn">Sua morada tem de ser completa!</p>
+
+            <div class="flex items-center justify-between mt-5 w-full">
+                <button id="close-modal-btn">Fechar</button>
+                <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar pedido</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FIM MODAL CART -->
+
+    <!-- INICIO FOOTER -->
+
+    <footer class="w-full bg-red-500 py-2 fixed bottom-0 z-40 flex items-center justify-center">
+        <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
+            (<span id="cart-count">0</span>)
+            Veja meu carrinho
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+    </footer>
+
+    <!-- FIM FOOTER -->
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
